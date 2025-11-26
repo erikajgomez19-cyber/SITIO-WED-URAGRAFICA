@@ -1,286 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URAGRAFICA - Impresión de Alta Calidad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URAGRAFICA - Impresión Litográfica Premium</title>
 
-    <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon">U</div>
-                <span class="logo-text">URAGRAFICA</span>
-            </div>
-
-            <nav class="nav-links" id="navMenu">
-                <a href="#hero">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#galeria">Galería</a>
-                <a href="#about">Nosotros</a>
-                <a href="#faq">Preguntas</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-
-            <a href="#contacto" class="btn-nav">Cotizar</a>
-
-            <button class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
-            </button>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-wrapper">
+        <div class="logo">
+            <div class="logo-icon">U</div>
+            <span class="logo-text">URAGRAFICA</span>
         </div>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="hero-image"></div>
+        <div class="nav-menu" id="navMenu">
+            <a href="#hero" class="nav-link">Inicio</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="#galeria" class="nav-link">Galería</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#contacto" class="btn-primary">Cotizar</a>
+        </div>
 
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>⚙️</span>
-                Impresión Litográfica Premium
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1581508512961-0e3b9524db40?w=1920" alt="Impresión profesional">
+        <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            <span>✨</span> Impresión Litográfica Premium
+        </div>
+
+        <h1 class="hero-title">
+            Dale Vida a tus Ideas con 
+            <span class="gradient-text">Impresión de Alta Calidad</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Somos especialistas en impresión litográfica con más de 15 años de experiencia.
+            Transformamos tus proyectos en realidad con precisión y los mejores precios.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#contacto" class="btn-primary btn-large">Cotizar Ahora →</a>
+            <a href="#servicios" class="btn-secondary btn-large">Ver Servicios</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-value">15+</div>
+                <div class="stat-label">Años de experiencia</div>
             </div>
-
-            <h1 class="hero-title">
-                Dale Vida a tus Ideas con
-                <span class="text-green">Impresión</span>
-                <span class="text-yellow">de Alta Calidad</span>
-            </h1>
-
-            <p class="hero-sub">
-                Más de 15 años de experiencia en impresión litográfica profesional.
-                Transformamos tus ideas en proyectos de alta calidad.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Cotizar Ahora →</a>
-                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            <div class="stat-item">
+                <div class="stat-value">5000+</div>
+                <div class="stat-label">Clientes satisfechos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">99%</div>
+                <div class="stat-label">Calidad garantizada</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SERVICIOS -->
-    <section class="services" id="servicios">
-        <h2 class="section-title">Nuestros Servicios</h2>
+<!-- NOSOTROS -->
+<section class="section about" id="nosotros">
+    <h2 class="section-title">¿Quiénes Somos?</h2>
+
+    <div class="section-text">
+        <p>
+            Somos una empresa especializada en impresión litográfica y soluciones gráficas integrales.
+            Durante más de <strong>15 años</strong> hemos trabajado con marcas, empresas y emprendedores,
+            ofreciendo resultados de alta calidad, precisión y profesionalismo.
+        </p>
+        <p>
+            Nuestro compromiso es ofrecer un acompañamiento completo: desde la idea, el diseño,
+            la producción y la entrega final.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="services" id="servicios">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Nuestros Servicios</span>
+            <h2 class="section-title">Soluciones Completas de Impresión</h2>
+            <p class="section-description">Ofrecemos una amplia gama de servicios para cubrir todas tus necesidades.</p>
+        </div>
 
         <div class="services-grid">
 
             <div class="service-card">
-                <div class="service-icon green">🖨️</div>
-                <h3>Impresión Offset</h3>
-                <p>Alta calidad para grandes volúmenes.</p>
+                <div class="service-icon green">
+                    📘
+                </div>
+                <h3 class="service-title">Impresión Offset</h3>
+                <p class="service-description">Ideal para grandes volúmenes, revistas, catálogos y folletos.</p>
+                <div class="service-line green"></div>
             </div>
 
             <div class="service-card">
-                <div class="service-icon yellow">🎨</div>
-                <h3>Diseño Gráfico</h3>
-                <p>Diseños profesionales y visuales atractivos.</p>
+                <div class="service-icon yellow">
+                    🎨
+                </div>
+                <h3 class="service-title">Diseño Gráfico</h3>
+                <p class="service-description">Diseños personalizados que capturan la esencia de tu marca.</p>
+                <div class="service-line yellow"></div>
             </div>
 
             <div class="service-card">
-                <div class="service-icon green">⚡</div>
-                <h3>Impresión Digital</h3>
-                <p>Rápida, precisa y perfecta para tirajes cortos.</p>
+                <div class="service-icon green">
+                    🖨️
+                </div>
+                <h3 class="service-title">Impresión Digital</h3>
+                <p class="service-description">Perfecto para tirajes cortos y entregas rápidas.</p>
+                <div class="service-line green"></div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon yellow">
+                    📦
+                </div>
+                <h3 class="service-title">Packaging</h3>
+                <p class="service-description">Empaques, cajas y etiquetas personalizadas.</p>
+                <div class="service-line yellow"></div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon green">
+                    🧾
+                </div>
+                <h3 class="service-title">Material Corporativo</h3>
+                <p class="service-description">Papelería, tarjetas, carpetas y más.</p>
+                <div class="service-line green"></div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon yellow">
+                    🖼️
+                </div>
+                <h3 class="service-title">Gran Formato</h3>
+                <p class="service-description">Lonas, pendones, vallas y publicidad exterior.</p>
+                <div class="service-line yellow"></div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- GALERÍA -->
-    <section class="gallery" id="galeria">
+<!-- GALERÍA -->
+<section class="gallery" id="galeria">
+    <div class="container">
         <h2 class="section-title">Galería</h2>
 
-        <p class="section-subtitle">
-            Algunos de nuestros trabajos realizados para clientes satisfechos.
-        </p>
-
         <div class="gallery-grid">
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=1200" alt="">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1738604977160-614076832598?w=600" alt="">
             </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=1200" alt="">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1751688405746-d554e38de1e8?w=600" alt="">
             </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=1200" alt="">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=600" alt="">
             </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1611691549428-cfa39b0852ed?w=1200" alt="">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=600" alt="">
             </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?w=1200" alt="">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1744057847940-85b1a5c09229?w=600" alt="">
             </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200" alt="">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1761116362962-3cd736532ea2?w=600" alt="">
             </div>
-
-        </div>
-    </section>
-
-    <!-- SOBRE NOSOTROS -->
-    <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2 class="section-title">¿Quiénes Somos?</h2>
-                <p>
-                    Somos una empresa especializada en impresión litográfica y soluciones gráficas integrales.
-                    Durante más de <strong>15 años</strong> hemos trabajado con marcas, empresas y emprendedores,
-                    ofreciendo resultados de alta calidad, precisión y profesionalismo.
-                </p>
-                <p>
-                    Nuestro compromiso es brindar un acompañamiento completo: desde la idea,
-                    el diseño, la producción y la entrega final.
-                </p>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1581508512961-0e3b9524db40?w=600" alt="">
             </div>
-
-            <div class="about-image"></div>
-        </div>
-    </section>
-
-    <!-- POR QUÉ ELEGIRNOS -->
-    <section class="why">
-        <h2 class="section-title">¿Por Qué Elegirnos?</h2>
-
-        <div class="why-grid">
-
-            <div class="why-card">
-                <div class="why-icon">⭐</div>
-                <h3>Calidad Garantizada</h3>
-                <p>Materiales premium y equipos de última generación.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="why-icon">⚡</div>
-                <h3>Entregas Rápidas</h3>
-                <p>Procesos optimizados para cumplir tiempos sin fallar.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="why-icon">🤝</div>
-                <h3>Atención Personalizada</h3>
-                <p>Asesoría y acompañamiento en todo el proceso.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- NUESTRO PROCESO -->
-    <section class="process">
-        <h2 class="section-title">Nuestro Proceso</h2>
-
-        <div class="process-steps">
-
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Idea y Asesoría</h3>
-                <p>Escuchamos tu proyecto y te guiamos en lo mejor para tu marca.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>Diseño Profesional</h3>
-                <p>Creamos diseños impactantes y listos para impresión.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>Producción</h3>
-                <p>Realizamos la impresión con precisión y equipos de alta calidad.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">4</div>
-                <h3>Entrega Final</h3>
-                <p>Recibe tu proyecto completamente terminado y listo para usar.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section class="testimonials">
-        <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
-
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p>"Servicio impecable. La calidad de impresión es superior."</p>
-                <span>- Andrea López</span>
-            </div>
-            <div class="testimonial-card">
-                <p>"Muy profesionales y puntuales. Siempre los recomiendo."</p>
-                <span>- Carlos Hernández</span>
-            </div>
-            <div class="testimonial-card">
-                <p>"Excelente atención y resultados. Mis diseños quedaron perfectos."</p>
-                <span>- Marcela Ruiz</span>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600" alt="">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- PREGUNTAS FRECUENTES -->
-    <section class="faq" id="faq">
-        <h2 class="section-title">Preguntas Frecuentes</h2>
-
-        <div class="faq-item">
-            <h3>¿Realizan envíos a todo el país?</h3>
-            <p>Sí, realizamos envíos nacionales con total seguridad.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>¿Pueden ayudarme con el diseño?</h3>
-            <p>Claro, contamos con diseñadores expertos listos para ayudarte.</p>
-        </div>
-
-        <div class="faq-item">
-            <h3>¿Ofrecen descuentos por volumen?</h3>
-            <p>Sí, manejamos precios especiales según cantidad y tipo de proyecto.</p>
-        </div>
-
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="contact" id="contacto">
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+    <div class="container">
         <h2 class="section-title">Contáctanos</h2>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Tu nombre" required />
-            <input type="email" placeholder="Tu correo" required />
-            <textarea placeholder="Describe tu proyecto" required></textarea>
-            <button class="btn-primary">Enviar Mensaje →</button>
-        </form>
-    </section>
+        <div class="contact-wrapper">
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2024 URAGRAFICA. Todos los derechos reservados.</p>
-    </footer>
+            <div class="contact-info">
+                <h3>Hablemos de tu proyecto</h3>
+                <p>Cuéntanos tu idea y nuestro equipo te asesorará con la mejor solución.</p>
 
-<script>
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("navMenu");
+                <div class="contact-card">📞 +57 300 123 4567</div>
+                <div class="contact-card">✉️ info@uragrafica.com</div>
+                <div class="contact-card">📍 Bogotá, Colombia</div>
+            </div>
 
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    hamburger.classList.toggle("active");
-});
-</script>
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Tu correo" required>
+                <input type="text" placeholder="Teléfono" required>
+
+                <select required>
+                    <option value="">Seleccionar servicio</option>
+                    <option>Impresión Offset</option>
+                    <option>Diseño Gráfico</option>
+                    <option>Impresión Digital</option>
+                    <option>Gran Formato</option>
+                </select>
+
+                <textarea placeholder="Describe tu proyecto"></textarea>
+
+                <button class="btn-primary btn-large">Enviar Mensaje →</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div class="footer-column">
+            <div class="logo">
+                <div class="logo-icon">U</div>
+                <span class="logo-text">URAGRAFICA</span>
+            </div>
+            <p class="footer-description">
+                Transformando ideas en realidad con impresión de alta calidad desde hace más de 15 años.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Servicios</h4>
+            <a href="#servicios">Impresión Offset</a>
+            <a href="#servicios">Diseño Gráfico</a>
+            <a href="#servicios">Impresión Digital</a>
+            <a href="#servicios">Gran Formato</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Empresa</h4>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Suscríbete para recibir novedades</p>
+            <input type="email" placeholder="Tu email">
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2024 URAGRAFICA. Todos los derechos reservados.
+    </div>
+</footer>
 
 </body>
 </html>
-
