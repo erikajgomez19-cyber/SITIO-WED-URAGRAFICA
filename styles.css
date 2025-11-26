@@ -1,136 +1,244 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URAGRAFICA - Impresión de Alta Calidad</title>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #111;
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+    z-index: 999;
+    backdrop-filter: blur(15px);
+}
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <div class="logo">
-                    <div class="logo-icon">U</div>
-                    <span class="logo-text">URAGRAFICA</span>
-                </div>
-            </div>
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-            <nav class="nav-links" id="navLinks">
-                <a href="#hero">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#galeria">Galería</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-icon {
+    width: 42px; height: 42px; border-radius: 10px;
+    background: linear-gradient(135deg, #2ecc71, #f1c40f);
+    display: flex; justify-content: center; align-items: center;
+    color: white; font-weight: 700; font-size: 1.2rem;
+}
 
-            <a href="#contacto" class="btn-nav">Cotizar</a>
+.logo-text { font-size: 1.3rem; font-weight: 600; }
 
-            <button class="hamburger" id="hamburgerBtn">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
+.nav-links {
+    display: flex; gap: 2rem;
+}
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="hero-bg"></div>
+.nav-links a {
+    color: #111; text-decoration: none; font-weight: 600;
+}
 
-        <div class="hero-content">
-            <div class="badge">
-                <span class="badge-icon">⚙️</span>
-                Impresión Litográfica Premium
-            </div>
+.btn-nav {
+    background: #2ecc71;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+.btn-nav:hover { background: #27ae60; }
 
-            <h1 class="hero-title">
-                Dale Vida a tus Ideas con 
-                <span class="highlight-green">Impresión</span>
-                <span class="highlight-yellow">de Alta Calidad</span>
-            </h1>
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
 
-            <p class="hero-sub">
-                Somos especialistas en impresión litográfica con más de 15 años de experiencia.  
-                Transformamos tus proyectos en realidad con la mejor calidad y los mejores precios.
-            </p>
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("https://images.unsplash.com/photo-1581508512961-0e3b9524db40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+}
 
-            <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Cotizar Ahora →</a>
-                <a href="#servicios" class="btn-dark">Ver Servicios</a>
-            </div>
-        </div>
-    </section>
+.hero-content {
+    max-width: 900px;
+    color: white;
+}
 
-    <!-- SERVICIOS -->
-    <section class="servicios" id="servicios">
-        <h2 class="section-title">Nuestros Servicios</h2>
-        <div class="services-grid">
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
 
-            <div class="service-card">
-                <div class="service-icon green">🖨️</div>
-                <h3>Impresión Offset</h3>
-                <p>Calidad superior para grandes volúmenes.</p>
-            </div>
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-            <div class="service-card">
-                <div class="service-icon yellow">🎨</div>
-                <h3>Diseño Gráfico</h3>
-                <p>Diseños profesionales e impactantes.</p>
-            </div>
+.highlight-green { color: #2ecc71; }
+.highlight-yellow { color: #f1c40f; }
 
-            <div class="service-card">
-                <div class="service-icon green">⚡</div>
-                <h3>Impresión Digital</h3>
-                <p>Velocidad y precisión para tirajes cortos.</p>
-            </div>
+.hero-sub {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
 
-        </div>
-    </section>
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    color: white;
+    background: #2ecc71;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+.btn-primary:hover { background: #27ae60; }
 
-    <!-- GALERIA -->
-    <section class="galeria" id="galeria">
-        <h2 class="section-title">Galería de Trabajos</h2>
+.btn-dark {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    background: rgba(0,0,0,.4);
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
 
-        <div class="galeria-grid">
-            <img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=600&q=80" alt="" />
-            <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&q=80" alt="" />
-            <img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=600&q=80" alt="" />
-        </div>
-    </section>
+/* SECCIONES */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 4rem 0 2rem 0;
+    font-family: 'Space Grotesk';
+}
 
-    <!-- CONTACTO -->
-    <section class="contacto" id="contacto">
-        <h2 class="section-title">Contáctanos</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Tu nombre" required />
-            <input type="email" placeholder="Tu email" required />
-            <textarea placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
-            <button type="submit" class="btn-primary">Enviar Mensaje →</button>
-        </form>
-    </section>
+/* Servicios */
+.services-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2024 URAGRAFICA - Todos los derechos reservados.</p>
-    </footer>
+.service-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
 
-    <script>
-        const hamburgerBtn = document.getElementById("hamburgerBtn");
-        const navLinks = document.getElementById("navLinks");
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
 
-        hamburgerBtn.onclick = () => {
-            navLinks.classList.toggle("active");
-            hamburgerBtn.classList.toggle("active");
-        };
-    </script>
+.green { color: #2ecc71; }
+.yellow { color: #f1c40f; }
 
-</body>
-</html>
+/* Galería */
+.galeria-grid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 260px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Contacto */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex; flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #111;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.2rem; }
+    .nav-links { display: none; }
+
+    .nav-links.active {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hamburger { display: block; }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background: #111;
+    border-radius: 5px;
+}
 
