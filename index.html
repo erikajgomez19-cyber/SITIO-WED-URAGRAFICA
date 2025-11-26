@@ -1,164 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URAGRAFICA - Impresión Litográfica Premium</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URAGRAFICA - Impresión de Alta Calidad</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
                 <div class="logo">
                     <div class="logo-icon">U</div>
                     <span class="logo-text">URAGRAFICA</span>
                 </div>
-
-                <div class="nav-menu" id="navMenu">
-                    <a href="#hero" class="nav-link">Inicio</a>
-                    <a href="#servicios" class="nav-link">Servicios</a>
-                    <a href="#galeria" class="nav-link">Galería</a>
-                    <a href="#contacto" class="nav-link">Contacto</a>
-                    <a href="#contacto" class="btn-primary">Cotizar</a>
-                </div>
-
-                <button class="hamburger" id="hamburger">
-                    <span></span><span></span><span></span>
-                </button>
             </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a href="#contacto" class="btn-nav">Cotizar</a>
+
+            <button class="hamburger" id="hamburgerBtn">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    </nav>
+    </header>
 
     <!-- HERO -->
     <section class="hero" id="hero">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1581508512961-0e3b9524db40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920">
-            <div class="hero-overlay"></div>
-        </div>
+        <div class="hero-bg"></div>
 
-        <div class="hero-effects">
-            <div class="effect-circle effect-green"></div>
-            <div class="effect-circle effect-yellow"></div>
-        </div>
+        <div class="hero-content">
+            <div class="badge">
+                <span class="badge-icon">⚙️</span>
+                Impresión Litográfica Premium
+            </div>
 
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge"><span>✨</span> Impresión Litográfica Premium</div>
+            <h1 class="hero-title">
+                Dale Vida a tus Ideas con 
+                <span class="highlight-green">Impresión</span>
+                <span class="highlight-yellow">de Alta Calidad</span>
+            </h1>
 
-                <h1 class="hero-title">
-                    Dale Vida a tus Ideas con 
-                    <span class="gradient-text">Impresión de Alta Calidad</span>
-                </h1>
+            <p class="hero-sub">
+                Somos especialistas en impresión litográfica con más de 15 años de experiencia.  
+                Transformamos tus proyectos en realidad con la mejor calidad y los mejores precios.
+            </p>
 
-                <p class="hero-subtitle">
-                    Somos especialistas en impresión litográfica con más de 15 años de experiencia.
-                    Transformamos tus proyectos en realidad con la mejor calidad.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#contacto" class="btn-primary btn-large">Cotizar Ahora →</a>
-                    <a href="#servicios" class="btn-secondary btn-large">Ver Servicios</a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat-item"><div class="stat-value">15+</div><div class="stat-label">Años</div></div>
-                    <div class="stat-item"><div class="stat-value">5000+</div><div class="stat-label">Clientes</div></div>
-                    <div class="stat-item"><div class="stat-value">99%</div><div class="stat-label">Calidad</div></div>
-                </div>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Cotizar Ahora →</a>
+                <a href="#servicios" class="btn-dark">Ver Servicios</a>
             </div>
         </div>
     </section>
 
     <!-- SERVICIOS -->
-    <section class="services" id="servicios">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Nuestros Servicios</span>
-                <h2 class="section-title">Soluciones de Impresión</h2>
-                <p class="section-description">Todo lo que necesitas en un solo lugar</p>
+    <section class="servicios" id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon green">🖨️</div>
+                <h3>Impresión Offset</h3>
+                <p>Calidad superior para grandes volúmenes.</p>
             </div>
 
-            <div class="services-grid">
-
-                <div class="service-card">
-                    <div class="service-icon green">🖨️</div>
-                    <h3 class="service-title">Impresión Offset</h3>
-                    <p class="service-description">Calidad superior para grandes volúmenes.</p>
-                    <div class="service-line green"></div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon yellow">🎨</div>
-                    <h3 class="service-title">Diseño Gráfico</h3>
-                    <p class="service-description">Diseños profesionales e impactantes.</p>
-                    <div class="service-line yellow"></div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon green">⚡</div>
-                    <h3 class="service-title">Impresión Digital</h3>
-                    <p class="service-description">Velocidad y precisión para tirajes cortos.</p>
-                    <div class="service-line green"></div>
-                </div>
-
+            <div class="service-card">
+                <div class="service-icon yellow">🎨</div>
+                <h3>Diseño Gráfico</h3>
+                <p>Diseños profesionales e impactantes.</p>
             </div>
+
+            <div class="service-card">
+                <div class="service-icon green">⚡</div>
+                <h3>Impresión Digital</h3>
+                <p>Velocidad y precisión para tirajes cortos.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- GALERIA -->
-    <section class="gallery" id="galeria">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge yellow">Galería</span>
-                <h2 class="section-title">Nuestros Trabajos</h2>
-            </div>
+    <section class="galeria" id="galeria">
+        <h2 class="section-title">Galería de Trabajos</h2>
 
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=600&q=80"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&q=80"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=600&q=80"></div>
-            </div>
+        <div class="galeria-grid">
+            <img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=600&q=80" alt="" />
+            <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&q=80" alt="" />
+            <img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=600&q=80" alt="" />
         </div>
     </section>
 
     <!-- CONTACTO -->
-    <section class="contact" id="contacto">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Contacto</span>
-                <h2 class="section-title">Hablemos de tu proyecto</h2>
-            </div>
-
-            <form class="contact-form">
-                <input type="text" placeholder="Tu nombre">
-                <input type="email" placeholder="Tu email">
-                <textarea placeholder="Cuéntanos tu idea..."></textarea>
-                <button class="btn-primary btn-large">Enviar Mensaje →</button>
-            </form>
-        </div>
+    <section class="contacto" id="contacto">
+        <h2 class="section-title">Contáctanos</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu nombre" required />
+            <input type="email" placeholder="Tu email" required />
+            <textarea placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje →</button>
+        </form>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <p>© 2024 URAGRAFICA — Todos los derechos reservados.</p>
-        </div>
+        <p>© 2024 URAGRAFICA - Todos los derechos reservados.</p>
     </footer>
 
-    <!-- JS -->
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const navLinks = document.getElementById("navLinks");
 
-        hamburger.onclick = () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+        hamburgerBtn.onclick = () => {
+            navLinks.classList.toggle("active");
+            hamburgerBtn.classList.toggle("active");
         };
     </script>
 
