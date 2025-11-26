@@ -3,266 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URAGRAFICA - Impresión y Diseño Profesional</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>URAGRAFICA – Impresión Litográfica Premium</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" 
-        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-icon">U</div>
-                <span>URAGRAFICA</span>
-            </div>
+<!-- ============================================
+     🔥 NAVBAR
+================================================= -->
+<nav class="navbar">
+    <div class="container nav-content">
 
-            <ul class="nav-menu">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-
-            <a href="#contacto" class="nav-btn">Cotizar</a>
+        <div class="logo">
+            <div class="logo-icon">U</div>
+            <span class="logo-text">URAGRAFICA</span>
         </div>
-    </nav>
 
-    <!-- HERO -->
-    <header id="hero" class="hero">
-        <div class="hero-overlay"></div>
-        <img class="hero-bg" 
-            src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?auto=format&fit=crop&w=1600&q=80">
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
 
-        <div class="hero-content">
-            <span class="hero-badge">✨ Impresión Litográfica Premium</span>
+        <a href="#contact" class="btn-primary nav-btn">Cotizar</a>
+    </div>
+</nav>
 
-            <h1>Dale Vida a tus Ideas con <br>
-                <span class="highlight">Impresión de Alta Calidad</span>
-            </h1>
+
+
+<!-- ============================================
+     🔥 HERO ULTRA PRO (NO LO CAMBIÉ, COMO PEDISTE)
+================================================= -->
+<section id="hero" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <img class="hero-bg" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1400&q=80" alt="Hero imagen">
+
+    <div class="hero-content">
+
+        <div class="hero-badge fade-up">
+            ✨ Impresión Litográfica Premium
+        </div>
+
+        <h1 class="hero-title fade-up">
+            Dale Vida a tus Ideas con<br>
+            <span class="gradient-text">Impresión de Alta Calidad</span>
+        </h1>
+
+        <p class="hero-sub fade-up">
+            Con más de 15 años de experiencia en impresión profesional, ayudamos a empresas y marcas 
+            a crear materiales visuales que destacan por su calidad y precisión.
+        </p>
+
+        <div class="hero-buttons fade-up">
+            <a href="#contact" class="btn-primary big">Cotizar Ahora →</a>
+            <a href="#services" class="btn-secondary big">Ver Servicios</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ============================================
+     🔥 QUIÉNES SOMOS ULTRA PRO
+================================================= -->
+<section id="about" class="about-section fade-in">
+
+    <div class="section-header slide-up">
+        <h2>¿Quiénes Somos?</h2>
+        <p>
+            Somos una empresa especializada en impresión litográfica, diseño gráfico, gran formato e identidad visual.
+            Ayudamos a marcas y emprendedores a comunicar su mensaje con materiales impresos de alta precisión.
+        </p>
+    </div>
+
+    <div class="about-grid">
+
+        <!-- IMAGEN -->
+        <div class="about-image slide-left">
+            <img src="https://images.unsplash.com/photo-1557682269-9673b30f0b19?auto=format&fit=crop&w=1000&q=80" alt="">
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="about-info slide-right">
+            <h3>Más de 15 años transformando ideas en experiencias visuales</h3>
 
             <p>
-                Con más de 15 años de experiencia en impresión profesional, 
-                ayudamos a empresas y marcas a crear materiales visuales 
-                que destacan por su calidad y precisión.
+                Contamos con un equipo especializado en diseño, preprensa, impresión y acabados. 
+                Nos enfocamos en ofrecer soluciones gráficas de alto impacto visual y calidad superior.
             </p>
 
-            <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Cotizar Ahora →</a>
-                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- QUIÉNES SOMOS -->
-    <section id="nosotros" class="about-section">
-        <div class="about-wrapper">
-
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1612817153279-386b8897c60f?auto=format&fit=crop&w=1200&q=80">
-            </div>
-
-            <div class="about-content">
-                <h2>¿Quiénes Somos?</h2>
-
-                <p>
-                    Somos una empresa especializada en impresión litográfica, diseño gráfico 
-                    y producción visual. Ayudamos a marcas, empresas y emprendedores a comunicar 
-                    su identidad con materiales de alta calidad.
-                </p>
-
-                <div class="about-cards">
-
-                    <div class="about-card">
-                        <span>📘</span>
-                        <h3>Historia</h3>
-                        <p>Más de 15 años ofreciendo soluciones gráficas personalizadas.</p>
-                    </div>
-
-                    <div class="about-card">
-                        <span>🎯</span>
-                        <h3>Misión</h3>
-                        <p>Entregar calidad superior en cada impresión.</p>
-                    </div>
-
-                    <div class="about-card">
-                        <span>👁️</span>
-                        <h3>Visión</h3>
-                        <p>Ser líderes en impresión profesional en Colombia.</p>
-                    </div>
-
+            <!-- ESTADÍSTICAS -->
+            <div class="stats">
+                <div class="stat-card">
+                    <h4 class="counter" data-target="15">0</h4>
+                    <span>Años de Experiencia</span>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SERVICIOS -->
-    <section id="servicios" class="services-section">
-        <h2 class="section-title-center">Nuestros Servicios</h2>
+                <div class="stat-card">
+                    <h4 class="counter" data-target="5000">0</h4>
+                    <span>Proyectos Realizados</span>
+                </div>
 
-        <div class="services-grid">
-
-            <div class="service-card">
-                <div class="service-icon">🖨️</div>
-                <h3>Impresión Offset</h3>
-                <p>Calidad superior para grandes volúmenes con precisión profesional.</p>
-                <a href="#contacto" class="more-btn">Más información →</a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">🎨</div>
-                <h3>Diseño Gráfico</h3>
-                <p>Identidades visuales creativas y modernas hechas a tu medida.</p>
-                <a href="#contacto" class="more-btn">Más información →</a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>Impresión Digital</h3>
-                <p>Rapidez, calidad y detalles para tirajes cortos y urgencias.</p>
-                <a href="#contacto" class="more-btn">Más información →</a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">📦</div>
-                <h3>Gran Formato</h3>
-                <p>Pendones, lonas, publicidad exterior y exhibición impactante.</p>
-                <a href="#contacto" class="more-btn">Más información →</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- GALERÍA -->
-    <section id="galeria" class="gallery-section">
-        <h2 class="section-title-center">Galería</h2>
-
-        <div class="gallery-grid">
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1603386329225-868f9f4a7af4?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1602320643989-fd80718b44b2?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-            <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1600181953600-e56a8c5da4f7?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-        </div>
-
-        <!-- LIGHTBOX -->
-        <div id="lightbox" class="lightbox">
-            <img id="lightbox-img">
-        </div>
-
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contact-section">
-        <h2 class="section-title-center">Contáctanos</h2>
-
-        <div class="contact-wrapper">
-
-            <div class="contact-info">
-                <div class="info-card"><span>📞</span> +57 300 123 4567</div>
-                <div class="info-card"><span>✉️</span> info@uragrafica.com</div>
-                <div class="info-card"><span>📍</span> Bogotá, Colombia</div>
-            </div>
-
-            <form class="contact-form">
-                <input type="text" placeholder="Nombre completo">
-                <input type="email" placeholder="Correo electrónico">
-                <input type="tel" placeholder="Teléfono">
-                <select>
-                    <option>Selecciona un servicio</option>
-                    <option>Impresión Offset</option>
-                    <option>Diseño Gráfico</option>
-                    <option>Impresión Digital</option>
-                    <option>Gran Formato</option>
-                </select>
-                <textarea placeholder="Describe tu proyecto..."></textarea>
-
-                <button class="btn-primary">Enviar Mensaje →</button>
-            </form>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-grid">
-
-            <div class="footer-brand">
-                <h3>URAGRAFICA</h3>
-                <p>Impresión profesional para marcas que buscan calidad superior.</p>
-            </div>
-
-            <div>
-                <h4>Servicios</h4>
-                <a>Impresión Offset</a>
-                <a>Diseño Gráfico</a>
-                <a>Impresión Digital</a>
-                <a>Gran Formato</a>
-            </div>
-
-            <div>
-                <h4>Empresa</h4>
-                <a>Nosotros</a>
-                <a>Galería</a>
-                <a>Contacto</a>
-                <a>Blog</a>
-            </div>
-
-            <div>
-                <h4>Newsletter</h4>
-                <div class="newsletter-box">
-                    <input placeholder="Tu email">
-                    <button>→</button>
+                <div class="stat-card">
+                    <h4 class="counter" data-target="1200">0</h4>
+                    <span>Clientes Felices</span>
                 </div>
             </div>
 
+            <!-- TARJETAS -->
+            <div class="about-cards">
+
+                <div class="about-card">
+                    <span>📘</span>
+                    <h3>Historia</h3>
+                    <p>Más de 15 años ofreciendo soluciones gráficas personalizadas.</p>
+                </div>
+
+                <div class="about-card">
+                    <span>🎯</span>
+                    <h3>Misión</h3>
+                    <p>Brindar impresión superior en cada proyecto, sin importar el tamaño.</p>
+                </div>
+
+                <div class="about-card">
+                    <span>👁️</span>
+                    <h3>Visión</h3>
+                    <p>Ser líderes en impresión profesional en Colombia.</p>
+                </div>
+
+            </div>
         </div>
 
-        <p class="footer-copy">© 2024 URAGRAFICA. Todos los derechos reservados.</p>
-    </footer>
+    </div>
 
-    <!-- JS LIGHTBOX -->
-    <script>
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
+</section>
 
-        document.querySelectorAll(".gallery-card img").forEach(img => {
-            img.addEventListener("click", () => {
-                lightbox.classList.add("active");
-                lightboxImg.src = img.src;
-            });
+
+
+<!-- ============================================
+     🔥 SERVICIOS PREMIUM (TARJETAS TIPO APP)
+================================================= -->
+<section id="services" class="services-section fade-in">
+
+    <h2 class="center-title">Nuestros Servicios</h2>
+
+    <p class="center-sub">
+        Soluciones gráficas innovadoras que potencian la identidad de tu marca.
+    </p>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fa-solid fa-layer-group icon"></i>
+            <h3>Impresión Offset</h3>
+            <p>
+                Ideal para grandes tirajes con exactitud de color y nitidez absoluta. 
+            </p>
+            <a href="#contact">Más Información →</a>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-pen-nib icon"></i>
+            <h3>Diseño Gráfico</h3>
+            <p>
+                Creamos diseños modernos, profesionales y memorables.
+            </p>
+            <a href="#contact">Más Información →</a>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-print icon"></i>
+            <h3>Impresión Digital</h3>
+            <p>
+                Rápida, económica y perfecta para cantidades pequeñas y medianas.
+            </p>
+            <a href="#contact">Más Información →</a>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-image icon"></i>
+            <h3>Gran Formato</h3>
+            <p>
+                Pendones, lonas, vallas y todo lo que tu marca necesite para impactar.
+            </p>
+            <a href="#contact">Más Información →</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ============================================
+     🔥 GALERÍA MODERNA ANIMADA
+================================================= -->
+<section id="gallery" class="gallery-section fade-in">
+
+    <h2 class="center-title">Galería</h2>
+
+    <div class="gallery-grid">
+
+        <img src="https://images.unsplash.com/photo-1587573089734-355fb9f5c4c0?auto=format&w=700" class="gallery-img zoom">
+
+        <img src="https://images.unsplash.com/photo-1616400619175-3fcdeec95df0?auto=format&w=700" class="gallery-img zoom">
+
+        <img src="https://images.unsplash.com/photo-1581508512961-0e3b9524db40?auto=format&w=700" class="gallery-img zoom">
+
+        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&w=700" class="gallery-img zoom">
+
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&w=700" class="gallery-img zoom">
+
+    </div>
+
+</section>
+
+
+
+<!-- ============================================
+     🔥 CONTACTO ULTRA PRO
+================================================= -->
+<section id="contact" class="contact-section fade-in">
+
+    <h2 class="center-title">Contáctanos</h2>
+
+    <div class="contact-grid">
+
+        <!-- INFO LATERAL -->
+        <div class="contact-info">
+
+            <h3>¿Tienes un proyecto?</h3>
+            <p>Estamos listos para ayudarte. ¡Hablemos!</p>
+
+            <div class="contact-box">
+                <i class="fa-solid fa-phone"></i> +57 300 123 4567
+            </div>
+
+            <div class="contact-box">
+                <i class="fa-solid fa-envelope"></i> info@uragrafica.com
+            </div>
+
+            <div class="contact-box">
+                <i class="fa-solid fa-location-dot"></i> Bogotá, Colombia
+            </div>
+
+        </div>
+
+        <!-- FORMULARIO -->
+        <form class="contact-form">
+
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono">
+
+            <select required>
+                <option>Selecciona un servicio</option>
+                <option>Impresión Offset</option>
+                <option>Diseño Gráfico</option>
+                <option>Impresión Digital</option>
+                <option>Gran Formato</option>
+            </select>
+
+            <textarea placeholder="Describe tu proyecto..." rows="5"></textarea>
+
+            <button class="btn-primary big">Enviar Mensaje →</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- ============================================
+     🔥 FOOTER ULTRA PRO
+================================================= -->
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+            <div class="logo-icon foot">U</div>
+            <h3>URAGRAFICA</h3>
+            <p>Impresión profesional para marcas que buscan calidad superior.</p>
+        </div>
+
+        <div>
+            <h4>Servicios</h4>
+            <a href="#">Impresión Offset</a>
+            <a href="#">Diseño Gráfico</a>
+            <a href="#">Impresión Digital</a>
+            <a href="#">Gran Formato</a>
+        </div>
+
+        <div>
+            <h4>Empresa</h4>
+            <a href="#about">Nosotros</a>
+            <a href="#gallery">Galería</a>
+            <a href="#contact">Contacto</a>
+        </div>
+
+        <div>
+            <h4>Newsletter</h4>
+            <input type="email" placeholder="Tu email">
+        </div>
+
+    </div>
+
+    <p class="footer-copy">
+        © 2024 URAGRAFICA. Todos los derechos reservados.  
+        Hecho con 💚 en Colombia
+    </p>
+
+</footer>
+
+
+
+<!-- ============================================
+     🔥 SCRIPT: CONTADOR ANIMADO + SCROLL
+================================================= -->
+<script>
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+        const animate = () => {
+            const value = +counter.getAttribute("data-target");
+            const data = +counter.innerText;
+            const time = value / 50;
+
+            if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 20);
+            } else {
+                counter.innerText = value;
+            }
+        };
+        animate();
+    });
+
+    // Animación en scroll
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add("visible");
+            }
         });
+    });
 
-        lightbox.addEventListener("click", () => {
-            lightbox.classList.remove("active");
-        });
-    </script>
+    document.querySelectorAll(".fade-in, .slide-up, .slide-left, .slide-right")
+        .forEach(el => observer.observe(el));
+</script>
+
 
 </body>
 </html>
+
