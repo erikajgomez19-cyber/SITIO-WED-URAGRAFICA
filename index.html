@@ -5,274 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URAGRAFICA - Impresión Litográfica Premium</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Hoja de estilos -->
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Slider SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
     <div class="container nav-wrapper">
+
         <div class="logo">
             <div class="logo-icon">U</div>
             <span class="logo-text">URAGRAFICA</span>
         </div>
 
-        <div class="nav-menu" id="navMenu">
-            <a href="#hero" class="nav-link">Inicio</a>
-            <a href="#servicios" class="nav-link">Servicios</a>
-            <a href="#galeria" class="nav-link">Galería</a>
-            <a href="#nosotros" class="nav-link">Nosotros</a>
-            <a href="#contacto" class="btn-primary">Cotizar</a>
-        </div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#hero">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto" class="btn-primary small">Cotizar</a>
+        </nav>
 
         <button class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
         </button>
-    </div>
-</nav>
 
-<!-- HERO -->
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
 <section class="hero" id="hero">
-    <div class="hero-background">
-        <img src="https://images.unsplash.com/photo-1581508512961-0e3b9524db40?w=1920" alt="Impresión profesional">
-        <div class="hero-overlay"></div>
-    </div>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
 
-    <div class="container hero-content">
-
-        <div class="hero-badge">
-            <span>✨</span> Impresión Litográfica Premium
-        </div>
+    <div class="hero-content fade-in">
+        <div class="hero-badge">✨ Impresión Litográfica Premium</div>
 
         <h1 class="hero-title">
-            Dale Vida a tus Ideas con 
-            <span class="gradient-text">Impresión de Alta Calidad</span>
+            Transformamos tus ideas en  
+            <span class="gradient-text">Impresiones Profesionales</span>
         </h1>
 
-        <p class="hero-subtitle">
-            Somos especialistas en impresión litográfica con más de 15 años de experiencia.
-            Transformamos tus proyectos en realidad con precisión y los mejores precios.
+        <p class="hero-sub">
+            Más de 15 años brindando calidad, precisión y acompañamiento total para tus proyectos.
         </p>
 
         <div class="hero-buttons">
-            <a href="#contacto" class="btn-primary btn-large">Cotizar Ahora →</a>
-            <a href="#servicios" class="btn-secondary btn-large">Ver Servicios</a>
-        </div>
-
-        <div class="hero-stats">
-            <div class="stat-item">
-                <div class="stat-value">15+</div>
-                <div class="stat-label">Años de experiencia</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value">5000+</div>
-                <div class="stat-label">Clientes satisfechos</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value">99%</div>
-                <div class="stat-label">Calidad garantizada</div>
-            </div>
+            <a href="#contacto" class="btn-primary big">Cotizar Ahora →</a>
+            <a href="#servicios" class="btn-secondary big">Ver Servicios</a>
         </div>
     </div>
 </section>
 
-<!-- NOSOTROS -->
-<section class="section about" id="nosotros">
+<!-- ================= QUIÉNES SOMOS ================= -->
+<section class="section" id="nosotros">
     <h2 class="section-title">¿Quiénes Somos?</h2>
 
-    <div class="section-text">
-        <p>
-            Somos una empresa especializada en impresión litográfica y soluciones gráficas integrales.
-            Durante más de <strong>15 años</strong> hemos trabajado con marcas, empresas y emprendedores,
-            ofreciendo resultados de alta calidad, precisión y profesionalismo.
-        </p>
-        <p>
-            Nuestro compromiso es ofrecer un acompañamiento completo: desde la idea, el diseño,
-            la producción y la entrega final.
-        </p>
+    <div class="about-grid">
+
+        <div class="about-img slide-left"></div>
+
+        <div class="about-info slide-right">
+            <p>
+                Somos una empresa especializada en impresión litográfica, diseño gráfico y producción visual.
+                Ayudamos a marcas, empresas y emprendedores a comunicar su identidad con materiales impresos
+                profesionales y de alta calidad.
+            </p>
+
+            <div class="about-features">
+                <div class="about-card">
+                    <div class="about-icon">📘</div>
+                    <h3>Historia</h3>
+                    <p>Más de 15 años ofreciendo soluciones gráficas personalizadas.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>Entregar calidad superior en cada impresión, sin importar el tamaño del proyecto.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">👁️</div>
+                    <h3>Visión</h3>
+                    <p>Convertirnos en la empresa líder de impresión y soluciones gráficas en Colombia.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<!-- SERVICIOS -->
-<section class="services" id="servicios">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge">Nuestros Servicios</span>
-            <h2 class="section-title">Soluciones Completas de Impresión</h2>
-            <p class="section-description">Ofrecemos una amplia gama de servicios para cubrir todas tus necesidades.</p>
-        </div>
+<!-- ================= SERVICIOS ================= -->
+<section class="section" id="servicios">
+    <h2 class="section-title">Nuestros Servicios</h2>
 
-        <div class="services-grid">
+    <p class="section-sub">Soluciones modernas en impresión y diseño</p>
 
-            <div class="service-card">
-                <div class="service-icon green">
-                    📘
-                </div>
-                <h3 class="service-title">Impresión Offset</h3>
-                <p class="service-description">Ideal para grandes volúmenes, revistas, catálogos y folletos.</p>
-                <div class="service-line green"></div>
+    <!-- Slider -->
+    <div class="swiper mySwiper services-slider">
+
+        <div class="swiper-wrapper">
+
+            <!-- Tarjeta 1 -->
+            <div class="swiper-slide service-card">
+                <div class="service-icon green">🖨️</div>
+                <h3>Impresión Offset</h3>
+                <p>Perfecta para grandes volúmenes con la máxima calidad y economía.</p>
+                <a class="service-btn">Más info →</a>
             </div>
 
-            <div class="service-card">
-                <div class="service-icon yellow">
-                    🎨
-                </div>
-                <h3 class="service-title">Diseño Gráfico</h3>
-                <p class="service-description">Diseños personalizados que capturan la esencia de tu marca.</p>
-                <div class="service-line yellow"></div>
+            <!-- Tarjeta 2 -->
+            <div class="swiper-slide service-card">
+                <div class="service-icon yellow">🎨</div>
+                <h3>Diseño Gráfico</h3>
+                <p>Identidad visual, branding, piezas publicitarias y más.</p>
+                <a class="service-btn">Más info →</a>
             </div>
 
-            <div class="service-card">
-                <div class="service-icon green">
-                    🖨️
-                </div>
-                <h3 class="service-title">Impresión Digital</h3>
-                <p class="service-description">Perfecto para tirajes cortos y entregas rápidas.</p>
-                <div class="service-line green"></div>
+            <!-- Tarjeta 3 -->
+            <div class="swiper-slide service-card">
+                <div class="service-icon green">⚡</div>
+                <h3>Impresión Digital</h3>
+                <p>Ideal para tirajes cortos, urgentes y de alta precisión.</p>
+                <a class="service-btn">Más info →</a>
             </div>
 
-            <div class="service-card">
-                <div class="service-icon yellow">
-                    📦
-                </div>
-                <h3 class="service-title">Packaging</h3>
-                <p class="service-description">Empaques, cajas y etiquetas personalizadas.</p>
-                <div class="service-line yellow"></div>
+            <!-- Tarjeta 4 -->
+            <div class="swiper-slide service-card">
+                <div class="service-icon yellow">📦</div>
+                <h3>Packaging</h3>
+                <p>Cajas personalizadas, etiquetas, empaques premium.</p>
+                <a class="service-btn">Más info →</a>
             </div>
 
-            <div class="service-card">
-                <div class="service-icon green">
-                    🧾
-                </div>
-                <h3 class="service-title">Material Corporativo</h3>
-                <p class="service-description">Papelería, tarjetas, carpetas y más.</p>
-                <div class="service-line green"></div>
+            <!-- Tarjeta 5 -->
+            <div class="swiper-slide service-card">
+                <div class="service-icon green">🧾</div>
+                <h3>Material Corporativo</h3>
+                <p>Papelería, carpetas, brochures, tarjetas, manuales.</p>
+                <a class="service-btn">Más info →</a>
             </div>
 
-            <div class="service-card">
-                <div class="service-icon yellow">
-                    🖼️
-                </div>
-                <h3 class="service-title">Gran Formato</h3>
-                <p class="service-description">Lonas, pendones, vallas y publicidad exterior.</p>
-                <div class="service-line yellow"></div>
+            <!-- Tarjeta 6 -->
+            <div class="swiper-slide service-card">
+                <div class="service-icon yellow">🖼️</div>
+                <h3>Gran Formato</h3>
+                <p>Pendones, lonas, vallas, señalización y publicidad exterior.</p>
+                <a class="service-btn">Más info →</a>
             </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- GALERÍA -->
-<section class="gallery" id="galeria">
-    <div class="container">
-        <h2 class="section-title">Galería</h2>
-
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1738604977160-614076832598?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1751688405746-d554e38de1e8?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1744057847940-85b1a5c09229?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1761116362962-3cd736532ea2?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1581508512961-0e3b9524db40?w=600" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACTO -->
-<section class="contact" id="contacto">
-    <div class="container">
-        <h2 class="section-title">Contáctanos</h2>
-
-        <div class="contact-wrapper">
-
-            <div class="contact-info">
-                <h3>Hablemos de tu proyecto</h3>
-                <p>Cuéntanos tu idea y nuestro equipo te asesorará con la mejor solución.</p>
-
-                <div class="contact-card">📞 +57 300 123 4567</div>
-                <div class="contact-card">✉️ info@uragrafica.com</div>
-                <div class="contact-card">📍 Bogotá, Colombia</div>
-            </div>
-
-            <form class="contact-form">
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Tu correo" required>
-                <input type="text" placeholder="Teléfono" required>
-
-                <select required>
-                    <option value="">Seleccionar servicio</option>
-                    <option>Impresión Offset</option>
-                    <option>Diseño Gráfico</option>
-                    <option>Impresión Digital</option>
-                    <option>Gran Formato</option>
-                </select>
-
-                <textarea placeholder="Describe tu proyecto"></textarea>
-
-                <button class="btn-primary btn-large">Enviar Mensaje →</button>
-            </form>
 
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ================= GALERÍA ================= -->
+<section class="section gallery" id="galeria">
+    <h2 class="section-title">Galería</h2>
+
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1738604977160-614076832598?w=800" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1751688405746-d554e38de1e8?w=800" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1579642984744-4dd0fe83c38c?w=800" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1620887134181-fa28241f227d?w=800" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1744057847940-85b1a5c09229?w=800" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1761116362962-3cd736532ea2?w=800" class="gallery-item">
+    </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="section" id="contacto">
+    <h2 class="section-title">Contáctanos</h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-info">
+            <h3>¿Tienes un proyecto?</h3>
+            <p>Estamos listos para ayudarte. ¡Hablemos!</p>
+
+            <div class="contact-box">📞 +57 300 123 4567</div>
+            <div class="contact-box">✉️ info@uragrafica.com</div>
+            <div class="contact-box">📍 Bogotá, Colombia</div>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="text" placeholder="Teléfono" required>
+
+            <select required>
+                <option value="">Selecciona un servicio</option>
+                <option>Impresión Offset</option>
+                <option>Impresión Digital</option>
+                <option>Diseño Gráfico</option>
+                <option>Gran Formato</option>
+            </select>
+
+            <textarea rows="5" placeholder="Describe tu proyecto..."></textarea>
+            <button type="submit" class="btn-primary big">Enviar Mensaje →</button>
+        </form>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
-    <div class="container footer-content">
+    <div class="container footer-grid">
 
-        <div class="footer-column">
+        <div class="footer-col">
             <div class="logo">
                 <div class="logo-icon">U</div>
                 <span class="logo-text">URAGRAFICA</span>
             </div>
-            <p class="footer-description">
-                Transformando ideas en realidad con impresión de alta calidad desde hace más de 15 años.
+            <p class="footer-desc">
+                Impresión profesional para marcas que buscan calidad superior.
             </p>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-col">
             <h4>Servicios</h4>
-            <a href="#servicios">Impresión Offset</a>
-            <a href="#servicios">Diseño Gráfico</a>
-            <a href="#servicios">Impresión Digital</a>
-            <a href="#servicios">Gran Formato</a>
+            <a>Impresión Offset</a>
+            <a>Diseño Gráfico</a>
+            <a>Impresión Digital</a>
+            <a>Gran Formato</a>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-col">
             <h4>Empresa</h4>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#">Blog</a>
+            <a>Nosotros</a>
+            <a>Galería</a>
+            <a>Contacto</a>
+            <a>Blog</a>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-col">
             <h4>Newsletter</h4>
-            <p>Suscríbete para recibir novedades</p>
             <input type="email" placeholder="Tu email">
         </div>
 
@@ -282,6 +257,32 @@
         © 2024 URAGRAFICA. Todos los derechos reservados.
     </div>
 </footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: { delay: 2200 },
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        900: { slidesPerView: 3 }
+    }
+});
+</script>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
+</script>
 
 </body>
 </html>
