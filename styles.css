@@ -1,3 +1,4 @@
+
 /* ============================================
    Fuente base y ajustes globales
    ============================================ */
@@ -306,6 +307,14 @@ img {
   color: #17c964;
 }
 
+.service-img {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
 /* ============================================
    GALERÍA
    ============================================ */
@@ -402,7 +411,6 @@ img {
 /* ============================================
    ANIMACIONES
    ============================================ */
-
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(25px); }
   to { opacity: 1; transform: translateY(0); }
@@ -417,6 +425,7 @@ img {
    RESPONSIVE
    ============================================ */
 @media (max-width: 992px) {
+
   .about-content,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -432,6 +441,7 @@ img {
 }
 
 @media (max-width: 600px) {
+
   .hero-title {
     font-size: 38px;
   }
@@ -444,4 +454,3 @@ img {
     flex-direction: column;
   }
 }
-
